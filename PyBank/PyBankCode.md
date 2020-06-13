@@ -1,6 +1,6 @@
-# python-homework
+# PyBank Solution
 
-#import necessary dependencies
+# Import necessary dependencies
 
 import os
 import csv
