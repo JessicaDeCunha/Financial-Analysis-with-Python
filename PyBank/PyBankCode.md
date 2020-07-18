@@ -1,17 +1,17 @@
-# PyBank Solution
-
-# Import necessary dependencies
+# python-homework
+# import necessary dependencies
 
 import os
 import csv
 
 # create the path for the file name
 
-budget_data = os.path.join("/Users/jessicarosedecunhacarmichael/Desktop/Important stuff/UofT FinTech/FinTech Class Repo/utor-tor-fin-pt-05-2020-u-c/02-Python/Homework/Instructions/PyBank/Resources", "budget_data.csv")
+budget_data = os.path.join("/Users/jessicarosedecunhacarmichael/Desktop/utor-tor-fin-pt-05-2020-u-c/02-Python/Homework/Instructions/PyBank/Resources", "budget_data.csv")
+
 
 # Write data to a .csv file
 
-with open(budget_data, newline="") as csvfile:
+with open(budget_data, newline=" ") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvfile)
     
@@ -91,5 +91,4 @@ with open(budget_data, newline="") as csvfile:
     file.write("Greatest Decrease in Profits: " + str(months[revenue_change.index(min(revenue_change))+1]) + " " + "$" + str(greatest_decrease) + "\n")
 
     file.close()
-
 
